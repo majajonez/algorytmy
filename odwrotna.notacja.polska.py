@@ -1,4 +1,3 @@
-alfabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 kolejka = []
 stos = []
 operator1 = ['+', '-']
@@ -10,12 +9,6 @@ odczytane = wpisane.split(" ")
 
 print(odczytane)
 
-
-
-def czy_jest_w_alfabecie(E):
-    for znak in alfabet:
-        if E == znak:
-            return True
 
 
 for e in odczytane:
