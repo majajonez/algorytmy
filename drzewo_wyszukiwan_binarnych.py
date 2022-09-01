@@ -34,6 +34,7 @@ root = BinarySearchTree(8)
 root.insert(5)
 root.insert(3)
 root.insert(9)
+root.insert(10)
 print(root.search(3))
 
 print(root.__str__())
