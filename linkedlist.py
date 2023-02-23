@@ -1,7 +1,7 @@
 class Node:
-    def __init__(self, wartosc, wskaznik):
-        self.wartosc = wartosc
-        self.wskaznik = wskaznik
+    def __init__(self, value, indicator):
+        self.value = value
+        self.indicator = indicator
 
     # def __str__(self):
     #     wskaznik = self.wskaznik
@@ -14,9 +14,9 @@ class Node:
 element1 = Node(5, Node(3, None))
 
 
-def drukuj(node):
-    print(node.wartosc)
-    if node.wskaznik is not None:
-        drukuj(node.wskaznik)
+def print_node(node):
+    print(node.value)
+    if node.indicator is not None:
+        print_node(node.indicator)
 
-drukuj(element1)
+print_node(element1)

@@ -1,20 +1,20 @@
-numery = [1, 3, 4, 5, 7, 8, 9, 10, 19, 20, 39, 40, 49, 50, 51, 60]
+numbers = [1, 3, 4, 5, 7, 8, 9, 10, 19, 20, 39, 40, 49, 50, 51, 60]
 
-def wyszukaj_przez_dzielenie(lista, numer):
-    srodkowy_index = len(lista) // 2
-    srodkowy_numer = lista[srodkowy_index]
-    if srodkowy_numer == numer:
-        print(f' znalazlem {numer}')
-    elif numer < srodkowy_numer:
-        if len(lista) > 1:
-            wyszukaj_przez_dzielenie(lista[:srodkowy_index], numer)
+def search_by_division(list, number):
+    central_index = len(list) // 2
+    central_number = list[central_index]
+    if central_number == number:
+        print(f'{number} was found')
+    elif number < central_number:
+        if len(list) > 1:
+            search_by_division(list[:central_index], number)
         else:
-            print("numeru nie ma na liscie")
-    elif numer > srodkowy_numer:
-        if len(lista) > 1:
-            wyszukaj_przez_dzielenie(lista[srodkowy_index:], numer)
+            print("this number is not on the list")
+    elif number > central_number:
+        if len(list) > 1:
+            search_by_division(list[central_index:], number)
         else:
-            print("numeru nie ma na liscie")
+            print("this number is not on the list")
 
 
-wyszukaj_przez_dzielenie(numery, 2)
+search_by_division(numbers, 2)
